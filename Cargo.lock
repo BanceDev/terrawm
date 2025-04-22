@@ -315,7 +315,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "mwm"
+name = "terrawm"
 version = "0.1.0"
 dependencies = [
  "anyhow",

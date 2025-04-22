@@ -43,10 +43,10 @@ pub fn get_config() -> Config {
     let config_path = format!(
         "{}{}",
         home_path.to_string_lossy(),
-        "/.config/mwm/config.toml"
+        "/.config/terrawm/config.toml"
     );
     let toml_string = fs::read_to_string(config_path)
-        .expect("Unable to read config.toml file from ~/.config/mwm/config.toml");
+        .expect("Unable to read config.toml file from ~/.config/terrawm/config.toml");
 
     toml::from_str(&toml_string).expect("Unable to parse toml config.")
 }
